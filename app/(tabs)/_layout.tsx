@@ -29,7 +29,11 @@ const TabIcon = ({ focused, icon, title }: any) => {
 
 const _layout = () => {
   return (
-    <Tabs>
+    <Tabs 
+      screenOptions={{
+        tabBarShowLabel: false
+      }}
+    >
       <Tabs.Screen 
         name='index'
         options={{ 
