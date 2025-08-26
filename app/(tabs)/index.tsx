@@ -82,11 +82,11 @@ export default function Index() {
 
         // Render each movie
         renderItem={({ item }) => (
-          <View className="flex-1 m-1 items-center">
+          // <View className="flex-1 m-1 items-center">
             <MovieCard 
               { ...item}
             />
-          </View>
+          // </View>
         )}
 
       />
