@@ -1,3 +1,4 @@
+import MovieCard from "@/components/MovieCard";
 import SearchBar from "@/components/SearchBar";
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
@@ -82,9 +83,9 @@ export default function Index() {
         // Render each movie
         renderItem={({ item }) => (
           <View className="flex-1 m-1 items-center">
-            <Text className="text-white text-sm text-center">
-              {item.title}
-            </Text>
+            <MovieCard 
+              { ...item}
+            />
           </View>
         )}
 
